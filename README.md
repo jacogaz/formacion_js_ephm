@@ -16,7 +16,7 @@
     - if {} else {}
     - if {} else if {}
 - Funciones
-- Cookies :cookie: :cookie:
+- Cookies :cookie:
 - Local Storage
 - DOM
 - POO en JavaScript
@@ -105,7 +105,7 @@ Normalmente se usa para recorrer arrays, o cuando necesitamos ejecutar una acci�
 - for...of
 - for...in
 
-for:
+**for**:
 Lo usamos para realizar una sentencia un número de veces, viene acompañado de un contador.
 
 ```
@@ -114,7 +114,7 @@ for(let i = 0; i < 5; i++){
 }
 ```
 
-while:
+**while**:
 Ejeuta un bloque de código siempre que se cumple la condición.
 
 ```
@@ -123,7 +123,7 @@ while(contador < 2) {
 }
 ```
 
-do while:
+**do while**:
 Similar al bucle while solo que está vez el bloque de código se ejecutará al menos una vez. (La parte del do{}).
 
 ```
@@ -132,7 +132,7 @@ do{
 } while (contador < 5);
 ```
 
-for...of:
+**for...of**:
 Se usa para recorrear arrays, recorre hasta la última posición del array, en cada iteración nos devuelve el valor de la posición.
 
 ```
@@ -141,7 +141,7 @@ for(let color of colores){
 }
 ```
 
-for...in:
+**for...in**:
 Lo usamos también para recorrer arrays, está vez cada iteración nos devolverá el indice o posición.
 
 ```
