@@ -94,9 +94,59 @@ let colores = ['amarillo', 'azul', 'rojo'];
 
 > *profundizaremos más en los arrays en el archivo arrays.js de este repo*
 
+# Bucles :arrows_counterclockwise:
 
+Es la repetición de un trozo de código un determindo número de veces.
+Normalmente se usa para recorrer arrays, o cuando necesitamos ejecutar una acción un determinado número de veces.
 
+- for
+- while
+- do while 
+- for...of
+- for...in
 
+for:
+Lo usamos para realizar una sentencia un número de veces, viene acompañado de un contador.
 
+```
+for(let i = 0; i < 5; i++){
+    // bloque de código
+}
+```
 
+while:
+Ejeuta un bloque de código siempre que se cumple la condición.
 
+```
+while(contador < 2) {
+    // bloque de código
+}
+```
+
+do while:
+Similar al bucle while solo que está vez el bloque de código se ejecutará al menos una vez. (La parte del do{}).
+
+```
+do{
+    //bloque de código
+} while (contador < 5);
+```
+
+for...of:
+Se usa para recorrear arrays, recorre hasta la última posición del array, en cada iteración nos devuelve el valor de la posición.
+
+```
+for(let color of colores){
+    console.log(color); // azul
+}
+```
+
+for...in:
+Lo usamos también para recorrer arrays, está vez cada iteración nos devolverá el indice o posición.
+
+```
+for(let indice in colores){
+    console.log(indice); // 0 en la primera iteración o si el array es asociativo, nos devolverá el indice.
+}
+```
+> *profundizaremos más en los arrays en el archivo loops.js de este repo*
