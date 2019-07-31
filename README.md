@@ -59,7 +59,7 @@ Existen distintos tipos de variables aunque se cree de la misma manera:
 - Strings
 - Booleanas
 
-Estas variables son case sensitive, lo que quiere deccir que las variables:
+Estas variables son case sensitive, lo que quiere decir que las variables:
 ```
 var nombrePersona;
 var nombrepersona;

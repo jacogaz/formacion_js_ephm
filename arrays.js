@@ -24,3 +24,9 @@ colores.sort(); // Ordenamos el array por orden alfabético
 console.log(colores);
 
 /* más métodos interesantes: splice(), slice(), pop()*/
+
+// Como recorrer arrays (los bucles los veremos más adelante)
+
+for(let i = 0; i<colores.length; i++){
+    console.log(colores[i]);
+}
