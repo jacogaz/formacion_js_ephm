@@ -124,7 +124,7 @@ while(contador < 2) {
 ```
 
 **do while**:
-Similar al bucle while solo que está vez el bloque de código se ejecutará al menos una vez. (La parte del do{}).
+Similar al bucle while solo que está vez el bloque de código se ejecutará al menos una vez.
 
 ```
 do{
