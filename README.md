@@ -73,7 +73,7 @@ Normalmente para que nuestro código quede más limpio y mas entendible los nomb
 
 > *podéis ver la diferencia entre var, let y const en el archivo variables.js de este repo*
 
-## Arrays
+## Arrays :wrench:
 
 Son un conjunto de datos ordeandos por posiciones. En javascript, estos datos pueden ser de cualquier tipo. Podemos tener en la primera posición un number, en la segunda un String y en la tercera un boolean.
 Las posiciones empiezan desde 0 siendo la primera posición y (array.length-1) la última posición.
@@ -82,7 +82,7 @@ let my_array = ['primero', 22, true]; // La posición 0 sería 'primero'
 console.log(my_array[3]); // true
 ```
 
-###### Formas de crear un array :wrench:
+###### Formas de crear un array 
 
 ```
 let colores = new Array();
