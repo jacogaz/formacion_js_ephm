@@ -54,7 +54,7 @@ En ese archivo podremos lanzar nuestro primer mensaje al navegador metiendo cód
 Todas las variables se crean con las palabras reservadas var, let o const.
 En que se diferencian cada una lo tocaremos más tarde.
 
-Existen distintos tipos de variables aunque se cree de la misma manera:
+Existen distintos tipos de variables aunque se creen de la misma manera:
 - Numéricas
 - Strings
 - Booleanas
@@ -87,7 +87,7 @@ console.log(my_array[3]); // true
 ```
 let colores = new Array();
 let colores = new Array(3); // lo inicializamos con tres posiciones
-et colores = new Array('amarillo', 'azul', 'rojo');
+let colores = new Array('amarillo', 'azul', 'rojo');
 let colores = [];
 let colores = ['amarillo', 'azul', 'rojo'];
 ```
