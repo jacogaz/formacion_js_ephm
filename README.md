@@ -151,7 +151,7 @@ for(let indice in colores){
 ```
 > *profundizaremos más en los arrays en el archivo loops.js de este repo*
 
-#Condicionales
+# Condicionales
 
 **if**:
 Por medio de un *if* se indica una condición que si se llega a cumplir se ejecuta el bloque de código que existe dentro de la condición.
