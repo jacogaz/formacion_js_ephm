@@ -233,4 +233,12 @@ let resultado_resta = resta(4,2);
 console.log(resultado_resta); // 2
 ```
 
+```
+if(numero < 5){
+    suma();
+} else {
+
+}
+```
+
 > *profundizaremos más en las funciones en el archivo functions.js de este repo*
