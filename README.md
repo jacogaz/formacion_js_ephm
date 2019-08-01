@@ -374,4 +374,53 @@ perro.prototype.ladrar = function (){
 ## Herencia:
 Ver: (https://developer.mozilla.org/es/docs/Web/JavaScript/Introducci%C3%B3n_a_JavaScript_orientado_a_objetos)
 
-Para aprender mas sobre: [Prototypes](https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b)
+Para aprender más sobre: [Prototypes](https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b)
+
+# JSON:
+
+JavaScript Object Notation, es un formato para compartir datos.
+
+Lo podemos utilizar a la hora de enviar datos, de organizar los datos que nos vengan de un formulario, al almacenar datos, etc.
+
+La sintaxis y la estructura cuenta con un indice y un valor:
+```
+{
+    "key": "value"
+}
+```
+Los diferentes tipos de datos que pueden ser usados en un JSON son:
+- strings (entre comillas)
+- numbers
+- objects
+- arrays
+- Booleans
+- null
+
+Un **ejemplo** de un JSON sería:
+```
+let coche = {
+    marca: "Renault",
+    modelo: "Clio",
+    color: "rojo",
+    deportivo: false,
+    ruedasRepuesto: 1
+    accesorios: [
+        "aleron",
+        "turbo"
+    ],
+    propietario:{
+        nombre: "Jacobo",
+        apellido: "Ospina",
+        edad: 24
+    }
+};
+```
+
+**Métodos de un JSON**:
+```
+JSON.stringify() // Explicado con anterioridad
+JSON.parse()
+```
+
+
+
