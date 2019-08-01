@@ -242,7 +242,7 @@ if(numero < 5){
 
 > *profundizaremos más en las funciones en el archivo functions.js de este repo*
 
-# LocalStorage / SessionStorage
+# LocalStorage / SessionStorage :open_file_folder:
 
 El Web Storage te permite almacenar elementos con indice/valor en el navegador.
 Estos elementos permanecerán después de refrescar la página (sessionStorage) y también de un refresco total del navegador (localStorage).
@@ -259,7 +259,7 @@ El localStorage y el sessionStorage tienen los mismos métodos y propiedades:
 - key(index) – get the key on a given position.
 - length – the number of stored items.
 
-via (https://javascript.info/localstorage#object-like-access)
+via (https://javascript.info/)
 
 **Guardando un elemento en el localStorage**:
 ```
