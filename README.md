@@ -150,3 +150,60 @@ for(let indice in colores){
 }
 ```
 > *profundizaremos más en los arrays en el archivo loops.js de este repo*
+
+#Condicionales
+
+**if**:
+Por medio de un *if* se indica una condición que si se llega a cumplir se ejecuta el bloque de código que existe dentro de la condición.
+
+```
+if(true){
+    // bloque de código a ejecutar
+}
+```
+
+**else**:
+Por medio de este *else* se establece una alternativa a la condición propuesta en el *if*.
+```
+if(false){
+    // no se cumple la condición
+} else {
+    // bloque de código a ejecutarse
+}
+```
+
+**if...else if**:
+Por medio de este *if...else* se indica que de no cumplirse la condición del *if* previo puede llegar a cumplirse la del *if...else if* y asi ejecutar el bloque de código de esta condición.
+
+```
+if(false){
+    // no se cumple la condición
+} else if (true){
+    // se cumple la condición, ejecuta este bloque de código
+} else {
+    // no ejecuta este bloque de código
+}
+```
+
+**switch**:
+Con el switch podemos listar una serie de condiciones, que de cumplirse ejecutarían el bloque de código correspondiente.
+
+```
+switch (variable){
+    case(valor1):
+        …enunciados a ejecutar para ese valor…
+        break;
+    case(valor2):
+        …enunciados a ejecutar para ese valor…
+        break;
+    case(valor3):
+        …enunciados a ejecutar para ese valor…
+        break;
+    default:
+        …enunciados a ejecutar cuando el valor no 
+        coincida con ninguno de los anteriores…
+        break;
+}
+```
+
+> *profundizaremos más en los arrays en el archivo conditionals.js de este repo*
