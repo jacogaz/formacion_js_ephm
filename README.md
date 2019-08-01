@@ -149,7 +149,7 @@ for(let indice in colores){
     console.log(indice); // 0 en la primera iteración o si el array es asociativo, nos devolverá el indice.
 }
 ```
-> *profundizaremos más en los arrays en el archivo loops.js de este repo*
+> *profundizaremos más en los bucles en el archivo loops.js de este repo*
 
 # Condicionales
 
@@ -206,4 +206,31 @@ switch (variable){
 }
 ```
 
-> *profundizaremos más en los arrays en el archivo conditionals.js de este repo*
+> *profundizaremos más en los condicionales en el archivo conditionals.js de este repo*
+
+# Funciones:
+
+Es un conjunto de instrucciones que se agrupan para realizar una tarea concreta.
+Pueden ser reutilizadas.
+
+Las funciones sirven para estructurar nuestro código de manera que si una operación se va a realizar repetidas veces lo mejor será crear una función y reutilizarla siempre que sea necesario.
+Tienen un nombre y pueden o no tener argumentos (separado por comas), también pueden o no devolver un valor.
+
+```
+function suma(){
+    // bloque de código
+}
+
+function resta(numero1, numero2){
+    resultado = numero1 - numero2;
+    return resultado;
+}
+```
+Para que esta función se ejecute es necesario llamarla cuando sea necesario.
+
+```
+let resultado_resta = resta(4,2);
+console.log(resultado_resta); // 2
+```
+
+> *profundizaremos más en las funciones en el archivo functions.js de este repo*
