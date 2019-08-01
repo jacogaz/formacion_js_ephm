@@ -422,5 +422,34 @@ JSON.stringify() // Explicado con anterioridad
 JSON.parse()
 ```
 
+# Incluir código javascript en un documento HTML:
 
+Podemos incluir este código JavaScript en nuestro documento de html.
+Tenemos dos opciones de hacerlo:
+
+1. Bajo la etiqueta script
+```
+<script></script>
+```
+2. Con archivo distinto e importándolo en el documento html
+```
+<script src="ubicacion.js"></script>
+```
+
+Si el archivo lo incluimos  dentro del head del html, cargará todo el script antes que el resto de etiquetas del body, por tanto podremos tener problemas a la hora de acceder al DOM. En estos casos es recomendable incluir el archivo .js al final dek body o llamar a un evento desde el archivo js para que una vez se haya cargado todo el documento, te cargue el script.
+```
+window.addEventListener('load', function(){
+    // todo el bloque de código
+});
+```
+
+**¿Cuando usar una forma u otra?**
+
+La respuesta es que si el código es muy grande y es un proyecto extenso será mejor ubicarlo en otro archivo distinto, de esta manera tendremos nuestro código mas estructurado y separado del HTML.
+
+Si el script del que necesitamos hacer uso es de apenas unas lineas podemos meter el código directamente en el HTML.
+
+# ¿PREGUNTAS?
+
+# FIN :tada: :tada: :tada: :tada: :tada:
 
