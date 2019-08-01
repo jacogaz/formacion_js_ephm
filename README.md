@@ -16,7 +16,6 @@
     - if {} else {}
     - if {} else if {}
 - Funciones
-- Cookies :cookie:
 - Local Storage
 - DOM
 - POO en JavaScript
@@ -237,8 +236,55 @@ console.log(resultado_resta); // 2
 if(numero < 5){
     suma();
 } else {
-
+    // bloque de código
 }
 ```
 
 > *profundizaremos más en las funciones en el archivo functions.js de este repo*
+
+# LocalStorage / SessionStorage
+
+El Web Storage te permite almacenar elementos con indice/valor en el navegador.
+Estos elementos permanecerán después de refrescar la página (sessionStorage) y también de un refresco total del navegador (localStorage).
+
+A diferencia de las cookies, estos elementos no se envían al servidor con cada petición.
+También, el servidor no puede manipular estos elementos a través de las cabeceras de HTTP.
+
+El localStorage y el sessionStorage tienen los mismos métodos y propiedades:
+
+- setItem(key, value) – store key/value pair.
+- getItem(key) – get the value by key.
+- removeItem(key) – remove the key with its value.
+- clear() – delete everything.
+- key(index) – get the key on a given position.
+- length – the number of stored items.
+
+via (https://javascript.info/localstorage#object-like-access)
+
+**Guardando un elemento en el localStorage**:
+```
+localStorage.setItem('name', 'jacobo');
+```
+
+**Consiguiendo el elemento**:
+```
+alert( localStorage.getItem('name'));
+```
+
+Estos valores que se almacenan son siempre strings. Sin embargo, podemos usar JSON para almacenar estos objetos:
+```
+let user = {
+    name: 'Jacobo',
+    surname: 'Ospina'
+}
+//Almacenamos el objeto convirtiendolo a string.
+localStorage.setItem('user', JSON.stringify(user));
+```
+
+Para recoger este objeto y parsearlo nuevamente al formato JSON:
+```
+//Recogemos el objeto y lo parseamos a JSON
+JSON.parse(localStorage.getItem('user'));
+```
+
+> *profundizaremos más en el localStorage y sessionStorage en el archivo store.js de este repo*
