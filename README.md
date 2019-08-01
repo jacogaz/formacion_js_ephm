@@ -294,4 +294,84 @@ JSON.parse(localStorage.getItem('user'));
 La manera en la que el contenido del Documento es modificado o accedido es a través del Document Object Model.
 La manera en la que se organizan los objetos es de manera jerárquica.
 
+Podemos acceder a los elementos del HTML a través de los id (único para cada elemento), de las clases, del tagName, etc.
+
+```
+document.getElementById('id');
+document.getElementsByClassName('class');
+```
+
 > *profundizaremos más en el DOM en el archivo dom.js de este repo*
+
+# POO en JavaScript:
+
+Es un paradigma que se basa en la abstracción para crear objetos que se asemejen a los del mundo real.
+
+**Terminología**
+
+1. Clase
+    - Define las características del Objeto.
+2. Objeto
+    - Una instancia de una Clase.
+3. Propiedad
+    - Una característica del Objeto, como el color.
+4. Método
+    - Una capacidad del Objeto, como caminar.
+5. Constructor
+    - Es un método llamado en el momento de la creación de instancias.
+6. Herencia
+    - Una Clase puede heredar características de otra Clase.
+7. Encapsulamiento
+    - Una Clase sólo define las características del Objeto, un Método sólo define cómo se ejecuta el Método.
+8. Abstracción
+    - La conjunción de herencia compleja, métodos y propiedades que un objeto debe ser capaz de simular en un modelo de la realidad.
+9. Polimorfismo
+    - Diferentes Clases podrían definir el mismo método o propiedad.
+
+via (https://developer.mozilla.org/es/docs/Web/JavaScript/Introducci%C3%B3n_a_JavaScript_orientado_a_objetos)
+
+**Objetos personalizados**:
+
+JavaScript es un lenguaje basado en prototipos. La creación de objetos no conlleva el uso de una clase.
+
+En lugar de usar clases, utiliza funciones, y definir esas "clases" es tan sencillo como definir una función.
+
+```
+function Animal(){}
+```
+
+Al ser un objeto lo normal es que la primera letra de la función vaya con mayúsculas.
+Instanciar una clase, en este caso una función sería tan simple como:
+```
+let animal1 = new Animal();
+```
+
+Al instanciar un objeto estamos llamando al **constructor**. Este constructor es un método de la clase. En javascript el constructor es la propia función. Al llamar a la función estamos llamando al constructor y por lo tanto estamos instanciando el objeto.
+Las **propiedades** son las caracteristicas que va a tener nuestro objeto (color, peso, raza, etc). Se definen dentro de este constructor o de esta función. Para que podamos trabajar con estas **propiedades tenemos que hacer uso de la palabra reservada _this_ seguida de la propiedad**.
+Para acceder a la propiedad desde fuera de la clase lo haríamos: **Instancia._propiedad_**.
+
+```
+function animal(raza){
+    this.raza = raza;
+}
+
+let perro = new Animal('perro');
+let gato = new Animal('gato');
+```
+
+Podemos también definir métodos a nuestros objetos, estos serían las acciones de dicho objeto (caminar, saltar, etc).
+
+```
+function animal(raza){
+    this.raza = raza;
+}
+
+let perro = new Animal('perro');
+perro.prototype.ladrar = function (){
+    alert('guau guau');
+};
+```
+## Herencia:
+Ver: (https://developer.mozilla.org/es/docs/Web/JavaScript/Introducci%C3%B3n_a_JavaScript_orientado_a_objetos)
+
+Para aprender mas sobre: [Prototypes](https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b)
