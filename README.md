@@ -288,3 +288,10 @@ JSON.parse(localStorage.getItem('user'));
 ```
 
 > *profundizaremos más en el localStorage y sessionStorage en el archivo store.js de este repo*
+
+# DOM:
+
+La manera en la que el contenido del Documento es modificado o accedido es a través del Document Object Model.
+La manera en la que se organizan los objetos es de manera jerárquica.
+
+> *profundizaremos más en el DOM en el archivo dom.js de este repo*
